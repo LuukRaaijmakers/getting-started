@@ -61,8 +61,7 @@ jobs:
  
             dns-name-label: ${{ secrets.RESOURCE_GROUP }} 
  
-            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ secrets.REPOSITORY_NAME }}:${{ 
-github.run_number }} 
+            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/${{ secrets.REPOSITORY_NAME }}:${{ github.run_number }} 
  
             registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }} 
  
