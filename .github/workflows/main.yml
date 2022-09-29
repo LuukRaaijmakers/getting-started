@@ -54,8 +54,8 @@ jobs:
  
           uses: 'azure/aci-deploy@v1' 
           
-          with: 
- 
+          with:
+            
             resource-group: ${{ secrets.RESOURCE_GROUP }} 
  
             dns-name-label: ${{ secrets.RESOURCE_GROUP }} 
@@ -71,5 +71,13 @@ jobs:
             name: getting-started-github 
  
             location: 'west europe' 
- 
+        
             ports: '3000' 
+
+            shareName: acishareluuk
+            
+            readOnly: true
+            
+            storageAccountName: luukacrstorage
+            
+            storageAccountKey: ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }}
