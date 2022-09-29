@@ -74,11 +74,13 @@ jobs:
         
             ports: '3000'
             
-            shareName: acishareluuk
+            azure-file-volume-share-name: 'acishareluuk'  
             
-            readOnly: true
+            azure-file-volume-account-name: 'luukacrstorage'
             
-            storageAccountName: luukacrstorage
+            azure-file-volume-account-key: ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }}
             
-            storageAccountKey: ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }}
+            azure-file-volume-mount-path: '/etc/todos'
+            
+
            
