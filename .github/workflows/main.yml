@@ -78,7 +78,7 @@ jobs:
             
             azure-file-volume-account-name: 'luukacrstorage'
             
-            azure-file-volume-account-key: ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }}
+            azure-file-volume-account-key: 'o7SUapmC3UlqqsInComSoaSs98YVv4Pipt2Ds4zV07OfPexZr2eIwHTELgUdK+r/nC6ufTCY4W41+AStXUlNng=='
             
             azure-file-volume-mount-path: '/etc/todos'
             
